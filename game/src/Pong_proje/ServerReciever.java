@@ -32,7 +32,7 @@ public class ServerReciever implements Runnable
 			while(true)
 			{
 				String clientText = clientInput.readLine();
-				if(checkInput(clientText))//checks if clientText is null and if it is noInput is set to true to close connection and the value isn't assigned to the variable
+				if(checkInput(clientText))
 				{
 					ballX = Integer.parseInt(clientText);
 				}

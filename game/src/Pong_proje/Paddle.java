@@ -1,8 +1,5 @@
 package Pong_proje;
 
-/*
-This is a simple wrapper class for integers.
-*/
 
 public class Paddle
 {

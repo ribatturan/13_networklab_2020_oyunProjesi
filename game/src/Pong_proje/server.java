@@ -1,8 +1,6 @@
 package Pong_proje;
 
-/*
-This is the server program that acts as the model for the pong game.
-*/
+
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.io.DataOutputStream;
@@ -34,8 +32,8 @@ public class server
 		}
 		try
 		{
-			/* first the server waits for connections from two clients and then stops listening 
-				the first connection is assigned the left player and the the second is assigned as the right*/
+			/* Server clientlerin bağlanmasını bekler ve ardından dinlemeyi sonlandırır 
+				ilk bağlantı sol, ikinci ise sağ olarak tanımlanır left/right */
 			System.out.println("Clientlar bekleniyor...");
 			ServerSocket serverSock = new ServerSocket(5555);
 			Socket connectionOne = serverSock.accept();
@@ -184,8 +182,8 @@ public class server
 	{
 		ballX = 450;
 		ballY = 250;
-		ballVelX = (Math.random()*2) - 1; //ball's x axis velocity
-		ballVelY = (Math.random()*2) - 1; //ball's y axis velocity
+		ballVelX = (Math.random()*2) - 1; //top x eksen ivmesi
+		ballVelY = (Math.random()*2) - 1; //top y eksen ivmesi
 		Paddle lRectY = new Paddle(0);
 		Paddle rRectY = new Paddle(0);
 		score = leftWins + " - " + rightWins;

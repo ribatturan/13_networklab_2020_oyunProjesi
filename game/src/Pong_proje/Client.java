@@ -1,8 +1,5 @@
 package Pong_proje;
 
-/*
-This is a client program that acts as the view and controller for the pong game.
-*/
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
